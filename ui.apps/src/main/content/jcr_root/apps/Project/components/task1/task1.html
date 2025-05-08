@@ -1,0 +1,17 @@
+<h2>Task 1</h2>
+
+<div data-sly-use.task1Model="com.Project.core.models.Task1Model">
+    <h2>Component Data</h2>
+
+    <p><strong>Text:</strong> ${task1Model.text}</p>
+    <p><strong>Path:</strong> ${task1Model.path}</p>
+    <p><strong>Checkbox:</strong> ${task1Model.checkbox ? 'Checked' : 'Unchecked'}</p>
+
+    <h3>Multifield Items:</h3>
+    <ul data-sly-test="${task1Model.mul}" data-sly-list.item="${task1Model.mul}">
+        <li>
+            <p><strong>Path2:</strong> ${item.path2}</p>
+            <p><strong>Date:</strong> ${item.date}</p>
+        </li>
+    </ul>
+</div>

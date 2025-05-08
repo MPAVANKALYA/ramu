@@ -1,0 +1,18 @@
+<p>columns layout component</p>
+<sly data-sly-use.model="com.Project.core.models.ContentComponentModel">
+
+
+    <div class="content-component">
+        <sly data-sly-list.column="${model.columns}">
+            <div class="column column-${column}">
+                <h3>${column} - Column</h3>
+
+                <sly data-sly-list.index="${column}">
+                    <div class="drag-component-placeholder">Drag components here</div>
+                </sly>
+                
+            </div>
+        </sly>
+    </div>
+
+</sly>

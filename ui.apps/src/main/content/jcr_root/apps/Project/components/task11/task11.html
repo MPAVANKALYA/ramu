@@ -1,0 +1,16 @@
+<p>hello world</p>
+
+<div data-sly-use.model="com.Project.core.models.Simple">
+
+
+    <h2>${model.text}</h2>
+
+   
+    <ul data-sly-list.item="${model.mul}">
+        <li>
+            <p>Path: ${item.path}</p>
+            <p>Date: ${item.date}</p>
+        </li>
+    </ul>
+
+</div>
